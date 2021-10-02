@@ -1,0 +1,254 @@
+/* هنا احضرت نوعين من انواع الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@500&display=swap');
+
+/* هنا قبل كل شيء اضع البايدنك والمارجن صفر لكل عناصر الموقع 
+وايضا بوردر بوكس حتى لا تتدمر الاحجام*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* هنا اضع صفات للهيدر واضع صورة في الخلفية واعطي صفات الصورة */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/db139493522503.5e673c880afbc.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+/* اعطي باك لون الخلفية للنافبار */
+.nav {
+    background-color: transparent;
+}
+/* اغطي هذا اللون اول ما اتعدى 
+الهيدير عن طريق الجيكويري */
+ .bgcolor{
+    background-color: rgba(247, 176, 22, 0.97);
+    transition: 1s ;
+}
+/* هنا وضعت صفات ديف اوفرلاي حتى يعطي جمالية للشريحة*/
+header .overlay {
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.4);
+}
+/* هنا صفات البوراكراق والعنوان الي داخل الهيدير  */
+header h3 {
+    font-family: 'Faustina', serif;
+}
+header p {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+/* هنا صفات ايك دف الي داخل السينتر  */
+header .center .egg {
+    width: 27px;
+    height: 50px;
+    border: 1px solid white;
+    left: 48%;
+     position: relative; /*اعطيته ريليتف حتى اعمل انميشن للابن الي هو سيركل دف */
+    top: 110%; 
+    border-radius: 30px;   
+}
+/* هذا هوو الدف الي اعمل عليه انميشن */
+header .center .egg .circle {
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+     position: absolute;  /*اعطيه ابسليوت حتى اغمله انميشن على موقعه من فوق تسبة الي الاب ايك ديف */
+    background-color: white;
+    top: 30%;
+    animation: shahad 6s infinite;   /* هنا استدعيت الانميشن والفترة 6 ثواني*/
+}
+
+ /* هذا هو الانميشن الي اسمه شهد يمر على خمس مراحل  يتم التغيير على موقع سيركل ديف 
+  من الاعلى وابضا الشفافية ويستغرق 6 ثواني ويبقى يتكرر الى ما لا نهاية*/
+@keyframes shahad {
+    0%{
+        top: 30%;
+        opacity: 0;
+    }
+    25%{
+        top: 70%;
+        opacity: 0.5;
+    }
+    50% {
+        top:30%;
+        opacity: 0;
+    }
+    75%{
+        top: 70%;
+        opacity: 1;
+    }
+    100%{
+        top: 30%;
+        opacity: 0;
+    }
+}
+    
+/* هذان الكلاسان استخدمهم بسيكشنين هما اباوت وريفيوو */
+ .h {
+    font-family:'Faustina', serif ;
+}
+ .po {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5rem;
+}
+.zero 
+{
+top:0;
+left:0;
+background-color: rgba(0,0,0,.5);
+visibility: hidden;
+}
+.child
+{
+width: 35%;
+z-index: 4;
+}
+ .fa-close {
+    top: 15%;
+    right: 3%;
+    position: absolute;
+    font-size: 30px !important;
+    color: #fea;
+    z-index: 4;
+ }
+ .fa-angle-left {
+    position: absolute !important;
+    top: 50%;
+    color: #fea !important;
+    left: 3%;
+    font-size: 40px !important;
+    font-weight: bold !important;
+    visibility: hidden;
+ }
+ .fa-angle-right {
+    position: absolute !important;
+    top: 50%;
+    color: #fea !important;
+    right: 3%;
+    font-size: 40px !important;
+    font-weight: bold !important;
+    visibility: hidden; }
+ 
+/* اعطي صورة خلفية لسيكشن فوفتو واجعلها ثابتة */
+.photo {
+    height: 550px;
+    background-image: url('../img/05e29462337553.5b9d11bd907bf.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* اعطي صفات للدووم ديف */
+.dom{
+    width: 100%;
+    height: 550px;
+    background-image: url('../img/db139493522503.5e673c880afbc.png');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+} 
+/*هنا اتحكم بموقع ايقونة بريف 
+من الاغلى واليسار */
+.carousel-control-prev {
+top: 140% !important;
+left: 41%;
+}
+/*هنا اتحكم بموقع ايقونة نيكست 
+من الاغلى اليمين */
+.carousel-control-next {
+top:140% !important;
+right: 41%;
+}
+/* هنا اتحكم بلون الخلفية للاوفرلاي الي تكون شفافة واعطي التوب والليفت صفر */
+.dom .overlay {
+    background-color: rgba(0,0,0,.6);
+    top:0;
+    left:0;
+}
+/* هنا اعطيت خلفية لاحد دفات القوتر الاربعة الي هو الاخير
+ وعملت لها كليب اي قص حسب الشكل المطلوب 
+ */
+footer .picture{
+    background-image: url('../img/contact-details-map.png');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+/* هنا اغير لون الايقونة ولون الخلفية للدف الخاص الموضوع فيه الايقونة
+حيث اعطيتهن جميع الدفات نفس الاسم 
+اما فيرست تايب معناهة الدف الاول
+nth(2) معناهة الدف الثاني
+nth(3) معناهة الدف الثالث
+امل ليست تايب معناهة الدف الاخير
+ */
+footer .copyright .div:first-of-type:hover,
+footer .copyright .div:nth-of-type(2):hover {
+    background-color: blue !important;
+    color:#fff !important;
+}
+footer .copyright .div:nth-of-type(3):hover {
+    background-color:rgb(38, 38, 177) !important ;
+    color:#fff !important;
+}
+footer .copyright .div:last-of-type:hover {
+    background-color: rgb(6, 136, 243) !important;
+    color:#fff !important;
+}
+/* اعطي صفات للبوتن 
+اهمها الهيدن حتى 
+اظهره بالجيكويري عند 
+ارتفاع مغين */
+.extra {
+  visibility: hidden;  
+  position: absolute;
+  top: 90%;
+  right: 5%;
+  position: fixed;
+}
+/* الكلاس الي اضيفه 
+عن طريق الجيكويري 
+الي يظهرلي البتون */
+.ve {
+    visibility: visible;
+    z-index: 100;
+}
+
+/* اعمل ميديا كويري عند عرض مغين اغير صفات بعض العناصر */
+@media(max-width: 565px) {
+    header h3 {
+        font-size: 1.2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }  
+    .child{
+        width: 100%;
+    }
+}
+@media(max-width: 767px) {
+    .child {
+        width: 85%;
+    }
+    .search{
+        height: 50%;
+        flex-wrap: nowrap;
+    }
+    .fa-angle-left,
+    .fa-angle-right{
+        z-index: 999;
+        color: #221 !important
+    }
+    .fa-close {
+        color: #221 !important;
+        top: 38%;
+        z-index: 999;
+    }
+   
+}

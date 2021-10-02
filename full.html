@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  <!--  هنا استدعيت صفحة البووتستراب المحفوظة عندي-->
+    <link rel="stylesheet" href="css/style.css"> <!-- هنا استدعي صفحة ال سي اي سي الي اني عملتها-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+
+    <title>Resturant</title>
+</head>
+<body>
+    <!-- بداية الهيدير-->
+    <header>
+        <!-- هنا عملت اوفرلاي فوق الطبفات -->
+       <div class="overlay position-absolute w-100 h-100"></div> <!-- وضعت هذا الدف حتى يجعل طبقة شفافة قبل الهيدر ليعطي جمالية له-->
+         <!-- اضع المحتوى في كونتيتر حتى يعمل مساحة من الجوانب-->
+            <!--هنا اخذت النافبار من البوتستراب و راح يتم تثبيته من الفوك على طول الموقع-->
+
+            <!--بداية الناف-->
+        <nav class="navbar navbar-expand-lg navbar-dark nav px-5 fixed-top">
+             <div class="container">
+            <a class="navbar-brand" href="#">Resturant</a> <!--عملت لينك-->
+            <!-- هتا وضعت زرار من يوصل عرض الشاشة الى السموول يختفي القائمة ويظهر هذا الزرار وعند الضغط عليه تظهر القائمة لكن بشكل عامودي-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- هنا استخدمت ايقونة-->
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- قائمة بمحتوى الموقع  عند الضفط على اي قائمة ياخذني الى الشريحة الي تحمل نفس ال اي دي-->
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+               
+                
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#search">Menu</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
+                  </li>
+              </ul>
+             
+            </div>
+          </div>
+          </nav>
+          <!-- نهاية الناف-->
+        
+        <!-- هتا عملت ديف حتى اوسطن محتوايته-->
+        <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+            <!-- الديف الي وسطنته-->
+        <div class="center text-center position-relative">
+          <img src="img/restaurant-2-light.png" alt="">
+          <h3 class="text-white mb-5 pt-5" style="font-size: 2.8rem;">French Resturant</h3>
+          <p class="text-white p mb-5"> We are the best Resturant in the twon</p>
+          <!-- عملت زرارينن-->
+          <button class="btn btn-light p-2 mr-2 mb-5">Learn More</button>
+          <button class="btn btn-outline-warning p-2 mb-5">Book A Visit</button>
+          <!-- عملت ديف حتى اوسطن محتواياته واعمله بوردر حتى يبين-->
+          <div class="egg d-flex justify-content-center align-items-center">
+            <!--هنا هملت الديف حتى اعمل فيه انميشن بسيط-->
+           <div class="circle"></div>
+          </div>
+            
+          
+          
+        </div>
+    </div>
+    </header>
+    <!-- نهاية الهيدير-->
+
+ <!-- بداية سكيشن اباوت-->
+   
+<!--بداية سكشن سيرج-->
+        <section class="search text-center py-5 bg-light" id="search">
+      <h3 class="h Our flag dishes text-secondary mb-4">Our flag dishes</h3>
+      <p class="po text-warning mb-4">Meals we are proud of.</p>
+      <!------------------>
+      <div class="container"> <!-- اضع المحتوى في كونتيتر حتى يعمل مساحة من الجوانب-->
+
+        <!-- اعمل فورم  من اجل البحث عن قائمة الوجبات -->
+       <form class="mb-5">
+         <!-- استخدم كريد سيستم -->
+         <div class="row"> 
+           <!-- اول قسم حياخذ 8 من عرض الشاشة -->
+           <div class="col-md-8 mb-2">
+             <!-- هنا عملت الانبت الي اكتب فبه الوحبة الي اريد ابحث عنها-->
+             <input type="text" class="w-100 h-100 text-warning shadow p-2 rounded" id="inputname" placeholder="search here">
+           </div>
+           <!-- الدف الثاني ياحذ اربعة من الشاشة -->
+           <div class="col-md-4">
+             <!--
+               زرار زايد من اجل شكل الموقع 
+              -->
+             <button class="btn btn-warning w-75 shadow" id="button">search</button>
+           </div>
+         </div>
+       </form>
+
+      <div class="row"> <!-- هنا استخدم كريد سيسنم -->
+        <div class="col-md-12" >
+             <div class="row" id="shahad"> <!-- هذا الديف عملته فارغ لاني اضع فيه محتويات لكن عن طريق الجافاسكربت -->
+                
+            </div>
+        </div>
+    </div>
+</div>
+        </section>
+        <!-- نهاية سكشن سيرج -->
+
+        <!-- بداية سكشن دووم -->
+       
+     <!-- بداية الفووتر -->
+     <footer class="bg-dark pt-5">  
+      <div class="container py-2"> <!-- اضع المحتوى في كونتيتر حتى يعمل مساحة من الجوانب-->
+        <div class="row">  <!--   هنا استخدمت كريد سيستم لقسم الشاشة الى اربع اقسام كل قسم ياخذ ربع الشاشة-->
+          <div class="col-md-3 mb-2">   <!--الدف الاول يتحدث عن الموقع -->
+            <h4 class="text-white mb-4">About us</h4>
+            <p class="text-light">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.</p> <br>
+            <p class="text-light">We are the champions! We are the most amazing theme of all time, yeah.</p>
+          </div>
+          <!--------------->
+          <div class="col-md-3 mb-2"> <!-- الدف الثاني يعطيني بعض المواقع المفيدة-->
+            <h4 class="text-white mb-4">Useful Links</h4>
+             <ul class="list-unstyled"> <!-- قاتمة بهذه القائمة مسبوقة بايقونة -->
+              <li class="text-light py-3 border-bottom"> <i class="fa fa-angle-right mr-2"></i> Contact</li>   <!--اول موقع-->
+              <li class="text-light py-3 border-bottom"> <i class="fa fa-angle-right mr-2"></i> About</li>     <!--ثاني موقع-->
+              <li class="text-light py-3 border-bottom"> <i class="fa fa-angle-right mr-2"></i> Menu</li>      <!--ثالث موقع-->
+              <li class="text-light py-3 border-bottom"> <i class="fa fa-angle-right mr-2"></i> Gallery</li>   <!--رابع موقع-->
+            </ul>
+          </div>
+          <!--------------->
+          <div class="col-md-3 mb-2"> <!-- الدف الثالث يعطيني اوقات عمل المطعم-->
+            <h4 class="text-white mb-4">Useful Links</h4>
+            <ul class="list-unstyled"> <!-- قاتمة بهذه القائمة مسبوقة بايقونة -->
+              <li class="text-light py-3 border-bottom"> <i class="fa fa-angle-right mr-2"></i> Monday 10AM – 9PM </li>   <!--اول وقت-->
+              <li class="text-light py-3 border-bottom"> <i class="fa fa-angle-right mr-2"></i> Tuesday 10AM – 9PM</li>     <!--ثاني وقت-->
+              <li class="text-light py-3 border-bottom"> <i class="fa fa-angle-right mr-2"></i> Wednesday 10AM – 9PM</li>      <!--ثالث وقت-->
+              <li class="text-light py-3 border-bottom"> <i class="fa fa-angle-right mr-2"></i> Thursday 10AM – 10PM</li>   <!--رابع وقت-->
+              <li class="text-light py-3 border-bottom"> <i class="fa fa-angle-right mr-2"></i> Friday 10AM – 10PM</li>   <!--رابع وقت-->
+              <li class="text-light py-3 border-bottom"> <i class="fa fa-angle-right mr-2"></i> Weekends 10AM – 11PM</li>   <!--رابع وقت-->
+
+            </ul>
+          </div>
+          <!------------->
+          <div class="col-md-3 mb-2  "> <!-- الدف الرابع يعطيني مغلومات الاتصال-->
+            <h4 class="text-white mb-4"> Contact Details</h4>
+            <ul class="list-unstyled picture">            <!-- قائمة بمعلومات الاتصال  -->
+              <li class="py-3 text-light border-bottom"> <i class="fa fa-map mr-2" style="font-size: 1rem;"></i> Manchester St 123-78B, Random 713, UK</li> <!-- الموقع -->
+              <li class="py-3 text-light border-bottom"><i class="fa fa-phone mr-2" style="font-size: 1rem;"></i>+46 123 456 789</li> <!-- الرقم  -->
+              <li class="py-3 text-light border-bottom"><i class="fa fa-phone-square mr-2" style="font-size: 1rem;"></i>+37 431 456 789</li> <!--  رقم ثاني -->
+              <li class="py-3 text-light border-bottom"> <i class="fa fa-envelope mr-2" style="font-size: 1rem;"></i> hello@sitename.com</li><!--  الايميل -->
+             </ul>
+          </div>
+        </div>
+      </div>
+      <!-- دف يتحدث عن حقوق النشر -->
+      <div class="copyright text-center py-5" style="background-color: #000;"> 
+
+        <img src="img/restaurant-2-light.png" class="mb-4" alt="">   <!-- استدعيت صورة-->
+        <p class="lead mb-4 text-secondary">Copyright 2017. All rights reserved.</p>
+        <!--
+           عملت دف خاص بالايقونات 
+           كل ايقونة وضعتها بدف بطول وعرض متساوي
+           واعطيته ديسبلي فلكس وجاستفاي سنتر وايضا الاين سنتر 
+           حتى اوسطن محتوياته الي هي الايقونة
+           مع بوردير ريديز سيركل
+         -->
+        <div class="icons d-flex justify-content-center">  
+          <!-- اول دف -->
+          <div class="div d-flex justify-content-center align-items-center bg-secondary rounded-circle mr-2" style="height: 50px; width: 50px;"> <i class="fa fa-facebook" style="font-size: 25px;"></i></div>
+          <!-- ثاني دف -->
+          <div class="div d-flex justify-content-center align-items-center bg-secondary rounded-circle mr-2" style="height: 50px; width: 50px;"> <i class="fa fa-instagram" style="font-size: 25px;"></i></div>
+          <!-- ثالث دف -->
+          <div class="div d-flex justify-content-center align-items-center bg-secondary rounded-circle mr-2" style="height: 50px; width: 50px;"> <i class="fa fa-linkedin" style="font-size: 25px;"></i></div>
+          <!-- رابع دف -->
+          <div class="div d-flex justify-content-center align-items-center bg-secondary rounded-circle" style="height: 50px; width: 50px;"> <i class="fa fa-twitter" style="font-size: 25px;"></i></div>
+        </div>
+      </div>
+     </footer>
+     <!-- نهاية الفووتر -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script> <!--   استدعاء صفحة الجيكويري من اجل الاشياء المعمولة بالبوتسراب -->
+    <script src="js/popper.min.js"></script> <!-- استدعاء صفحة البوبير -->
+    <script src="js/bootstrap.min.js"></script> <!--   استدعاء صفحة البوتستراب من اجل الاسياء المغمولة بالجافا الخاصة بالبوتستراب -->
+    <script src="js/first.js"></script> <!--   استدعاء صفحة انا اكتب فيها اكواد -->
+</body>
+</html>
